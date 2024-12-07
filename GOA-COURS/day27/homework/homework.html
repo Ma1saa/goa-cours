@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixing Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .paragraph {
+            border: 2px solid rgb(100, 100, 255);
+            color: rgb(255, 200, 200);
+            background-color: rgb(200, 100, 200);
+            padding: 10px;
+            width: calc(100% / 4 - 20px);
+            box-sizing: border-box;
+        }
+
+        .photo {
+            border: 5px solid rgb(150, 150, 255);
+            background-color: rgb(220, 220, 240);
+            width: calc(100% / 5 - 20px);
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .button {
+            border: 3px solid rgb(255, 100, 100);
+            color: rgb(255, 255, 255);
+            background-color: rgb(100, 50, 150);
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: rgb(150, 100, 200);
+        }
+    </style>
+</head>
+<body>
+    <!-- 20 paragraphs -->
+    <div>
+        <h2>Paragraphs</h2>
+        <div>
+            <!-- Generate 20 paragraphs -->
+            <div class="paragraph">Paragraph 1: Experimenting with RGB colors.</div>
+            <div class="paragraph">Paragraph 2: Mixing red and blue for this text.</div>
+            <div class="paragraph">Paragraph 3: Playing with light and dark shades.</div>
+            <div class="paragraph">Paragraph 4: Testing contrast between background and border.</div>
+            <div class="paragraph">Paragraph 5: Another combination of red and green.</div>
+        </div>
+    </div>
